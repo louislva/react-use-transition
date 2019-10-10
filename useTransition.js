@@ -33,7 +33,6 @@ const useTransition = (initialValue, setValue) => {
 
   const animate = ({ to, duration, fps, bounce, bouncePeak }) => {
     endAnimation();
-    //should probably finish the current animation if any going on...
 
     toValue.current = to;
     transitionDuration.current = duration;
@@ -54,7 +53,6 @@ const useTransition = (initialValue, setValue) => {
         );
         const newValue = fromValue.current + change * progress;
 
-        // const newValue = easeInOutBack(Date.now() - transitionStart.current, fromValue, change, transitionDuration);
         if (
           (internalValue.current - fromValue.current) / change > 1 &&
           progress < 1
