@@ -1,0 +1,11 @@
+{
+  "name": "react-use-transition",
+  "version": "0.0.1",
+  "description": "A simple react-hook for a sigmoid-like transition between two numbers, over time",
+  "main": "useTransition.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Louis Arge",
+  "license": "MIT"
+}
